@@ -1,4 +1,4 @@
-var data = $.getJSON('http://raw.githubusercontent.com/AzureWorkshops/AzureWorkshops.github.io/master/workshops.json');
+var data = $.getJSON('//raw.githubusercontent.com/AzureWorkshops/AzureWorkshops.github.io/master/workshops.json');
 
 var activeData = [];
 var filters = [];
