@@ -69,7 +69,7 @@ function containsObjs(objs, type) {
 
 function createElement(course) {
     var div = $('<div class="course"></div>').html(
-        '<div class="image"><img src="http://raw.githubusercontent.com/AzureWorkshops/images/master/logos/' + course.image + '" /></div>' +
+        '<div class="image"><img src="//raw.githubusercontent.com/AzureWorkshops/images/master/logos/' + course.image + '" /></div>' +
         '<div class="cdesc"><h3><a href="' + course.url + '">' + course.title + '</a></h3>' +
         course.description);
     $('#courses').append(div);
