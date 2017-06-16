@@ -2,6 +2,7 @@
     {
     "title": "AD Connect",
     "description": "This workshop centers around helping the user better understand the basics of Azure Active Directory, including Office 365. Particiapnts with learn how to connect and synchronize an on-premises Active Directory with Azure AD.",
+    "image": "azure_active_directory.png",
     "url": "https://azureworkshops.github.io/Azure-AD-Connect/",
     "tags": ["Office 365", "Active Directory"],
     "os": ["Windows Server"],
