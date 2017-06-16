@@ -249,3 +249,7 @@ input[type="radio"].styled:checked + label:after {
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: #286090;
 }
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #286090;
+}
