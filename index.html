@@ -1,26 +1,139 @@
-<html>
-  <head>
-    <title>Azure Workshops</title>
-  </head>
-  <body>
-    <h2>Azure AD</h2>
-    <ul>
-      <li><a href="https://azureworkshops.github.io/Azure-AD-Connect/">AD Connect</a></li>
-    </ul>
-    <h2>Containers and Microservices</h2>
-    <ul>
-      <li><a href="https://azureworkshops.github.io/Docker-on-Ubuntu/">Docker on Ubuntu (Linux-based containers)</a></li>
-      <li><a href="https://azureworkshops.github.io/Docker-on-CentOS/">Docker on CentOS (Linux-based containers)</a></li>
-      <li><a href="https://azureworkshops.github.io/Docker-on-Windows-Server/">Docker on Windows Server 2016 (Windows-based containers)</a></li>
-      <li><a href="https://azureworkshops.github.io/Dockerfiles-Linux/">Docker Automation with Dockerfiles (Linux)</a></li>
-      <li>Docker Automation with Dockerfiles (Windows Server) <em>(Coming Soon)</em></li>
-      <li>Docker Compose <em>(Coming Soon)</em></li>
-      <li>Docker Swarm <em>(Coming Soon)</em></li>
-      <li>Kubernetes <em>(Coming Soon)</em></li>
-      <li>Azure Container Service (ACS) <em>(Coming Soon)</em></li>
-      <li>Azure Container Registry (ACR) <em>(Coming Soon)</em></li>
-      <li>Service Fabric <em>(Coming Soon)</em></li>
-      <li>Monitoring Docker with Operations Management Suite (OMS) <em>(Coming Soon)</em></li>
-    </ul>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Azure Workshops</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/awesome-bootstrap-checkbox.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="/">Azure Workshops</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!--
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            -->
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="mask">
+      <div class="container">
+        <h1 class="display-3">In-depth, enterprise-level workshops for Azure and Office 365</h1>
+        <p>Gain learning and increase understanding with workshops specifically designed for enterprise users. Ranging from
+          beginner to advanced, these workshops will walk you through many of the scenarios you face every day within your
+          organization.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row" style="display:none;">
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+          nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+          nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis
+          euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+          sit amet risus.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+    </div>
+
+
+
+      <div class="row">
+        <div class="col-md-4" style="padding-left:0px;">
+          <div class="filters hidden-print hidden-sm hidden-xs" data-spy="affix" data-offset-top="405">
+            <h5>Subjects</h5>
+            <div id="filter-options-subject"></div>
+            <h5>OS</h5>
+            <div id="filter-options-os"></div>
+          </div>
+        </div>
+        <div class="col-md-8" style="min-height:300px;">
+          <div id="courses"></div>
+        </div>
+      </div>
+
+
+    <hr>
+
+    <footer>
+      <p class="small">&copy; Azure Workshops 2017. Workshop content is licensed under a Creative Commons Attribution 4.0 International License.</p>
+    </footer>
+  </div>
+  <!-- /container -->
+
+  <!-- jQuery first, then Bootstrap JS. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./scripts/scripts.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101169740-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+
 </html>

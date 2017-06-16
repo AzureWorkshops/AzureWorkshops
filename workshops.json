@@ -1,0 +1,96 @@
+[
+    {
+    "title": "AD Connect",
+    "description": "This workshop centers around helping the user better understand the basics of Azure Active Directory, including Office 365. Particiapnts with learn how to connect and synchronize an on-premises Active Directory with Azure AD.",
+    "url": "https://azureworkshops.github.io/Azure-AD-Connect/",
+    "tags": ["Office 365", "Active Directory"],
+    "os": ["Windows Server"],
+    "active": true
+    },
+    {
+    "title": "Docker on Ubuntu (Linux-based containers)",
+    "description": "As an introduction into Linux-based containers, this workshop, will help you gain experience in installing and configuring Docker on an Ubuntu server and deploying different images as containers.",
+    "image": "docker.png",
+    "url": "https://azureworkshops.github.io/Docker-on-Ubuntu/",
+    "tags": ["Containers and Microservices"],
+    "os": ["Ubuntu"],
+    "active": true
+    },
+    {
+    "title": "Docker on CentOS (Linux-based containers)",
+    "description": "As an introduction into Linux-based containers, this workshop, will help you gain experience in installing and configuring Docker on a CentOS server and deploying different images as containers.",
+    "image": "docker.png",
+    "url": "https://azureworkshops.github.io/Docker-on-CentOS/",
+    "tags": ["Containers and Microservices"],
+    "os": ["CentOS"],
+    "active": true
+    },
+    {
+    "title": "Docker on Windows Server 2016 (Windows-based containers)",
+    "description": "As an introduction into Linux-based containers, this workshop, will help you gain experience in installing and configuring Docker on a Windows Server 2016 server and deploying different images as containers.",
+    "image": "docker.png",
+    "url": "https://azureworkshops.github.io/Docker-on-Windows-Server/",
+    "tags": ["Containers and Microservices"],
+    "os": ["Windows Server"],
+    "active": true
+    },
+    {
+    "title": "Docker Automation with Dockerfiles (Linux)",
+    "description": "This workshop will show you how to automate the building and configuring of a Linux-based Docker image by utilizing Dockerfiles. You will construct a Dockerfile by mimicking a production environment while learning some of the options for a Dockerfile configuration.",
+    "image": "docker.png",
+    "url": "https://azureworkshops.github.io/Dockerfiles-Linux/",
+    "tags": ["Containers and Microservices"],
+    "os": ["Ubuntu", "CentOS"],
+    "active": true
+    },
+    {
+    "title": "Docker Automation with Dockerfiles (Windows Server)",
+    "description": "Docker Automation with Dockerfiles (Windows Server) description",
+    "tags": ["Containers and Microservices"],
+    "os": ["Windows Server"],
+    "active": false
+    },
+    {
+    "title": "Docker Compose",
+    "description": "Docker Compose description",
+    "tags": ["Containers and Microservices"],
+    "active": false
+    },
+    {
+    "title": "Docker Swarm",
+    "description": "Docker Swarm description",
+    "tags": ["Containers and Microservices"],
+    "active": false
+    },
+    {
+    "title": "Kubernetes",
+    "description": "Kubernetes description",
+    "image": "kubernetes.png",
+    "tags": ["Containers and Microservices"],
+    "active": false
+    },
+    {
+    "title": "Azure Container Service (ACS)",
+    "description": "Azure Container Service (ACS) description",
+    "tags": ["Containers and Microservices"],
+    "active": false
+    },
+    {
+    "title": "Azure Container Registry (ACR)",
+    "description": "Azure Container Registry (ACR) description",
+    "tags": ["Containers and Microservices"],
+    "active": false
+    },
+    {
+    "title": "Service Fabric",
+    "description": "Service Fabric description",
+    "tags": ["Containers and Microservices"],
+    "active": false
+    },
+    {
+    "title": "Monitoring Docker with Operations Management Suite (OMS)",
+    "description": "Monitoring Docker with Operations Management Suite (OMS) description",
+    "tags": ["Containers and Microservices"],
+    "active": false
+    }
+]
