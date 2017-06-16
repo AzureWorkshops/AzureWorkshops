@@ -9,7 +9,6 @@ $(document)
 $('form').on('submit', function (event) {
     event.preventDefault();
 
-    console.log(JSON.stringify($(this).serializeArray()));
     $.post('//azworkshops.azurewebsites.net/api/sendgrid', JSON.stringify($(this).serializeArray()), function(data) {
         console.log(data);
         $('#form').hide();

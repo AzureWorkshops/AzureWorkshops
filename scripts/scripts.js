@@ -88,6 +88,7 @@ function addOption(item, list) {
 
 $(document).ready(function () {
     data = $.getJSON('//raw.githubusercontent.com/AzureWorkshops/AzureWorkshops.github.io/master/workshops.json');
+    console.log(data);
     activeData = $.grep(data, (n) => { return n.active; });
 
     // Get only active tags
