@@ -10,7 +10,7 @@ $('form').on('submit', function (event) {
     event.preventDefault();
 
     console.log(JSON.stringify($(this).serializeArray()));
-    $.post('http://azworkshops.azurewebsites.net/api/sendgrid', JSON.stringify($(this).serializeArray()), function(data) {
+    $.post('https://azworkshops.azurewebsites.net/api/sendgrid', JSON.stringify($(this).serializeArray()), function(data) {
         console.log(data);
         $('#form').hide();
         $('#thankYou').show();
