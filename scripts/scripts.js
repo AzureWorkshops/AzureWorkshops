@@ -1,4 +1,4 @@
-var data = $.getJSON('//raw.githubusercontent.com/AzureWorkshops/AzureWorkshops.github.io/master/workshops.json');
+var data = undefined;
 
 var activeData = [];
 var filters = [];
@@ -87,6 +87,7 @@ function addOption(item, list) {
 }
 
 $(document).ready(function () {
+    data = $.getJSON('//raw.githubusercontent.com/AzureWorkshops/AzureWorkshops.github.io/master/workshops.json');
     activeData = $.grep(data, (n) => { return n.active; });
 
     // Get only active tags
