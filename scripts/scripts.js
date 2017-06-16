@@ -89,31 +89,32 @@ function addOption(item, list) {
 $(document).ready(function () {
     $.getJSON('//raw.githubusercontent.com/AzureWorkshops/AzureWorkshops.github.io/master/workshops.json', (resp) => {
         data = resp;
-    });
-    activeData = $.grep(data, (n) => { return n.active; });
+    }).then(() => {
+        activeData = $.grep(data, (n) => { return n.active; });
 
-    // Get only active tags
-    $.each(activeData, (i, v) => {
-        $.each(v.tags, (j, k) => {
-            if ($.grep(filters, (e) => { return e.tag == k; }).length === 0)
-                filters.push({ "tag": k, "checked": false });
+        // Get only active tags
+        $.each(activeData, (i, v) => {
+            $.each(v.tags, (j, k) => {
+                if ($.grep(filters, (e) => { return e.tag == k; }).length === 0)
+                    filters.push({ "tag": k, "checked": false });
+            });
+            $.each(v.os, (j, k) => {
+                if ($.grep(filters, (e) => { return e.os == k; }).length === 0)
+                    filters.push({ "os": k, "checked": false });
+            });
         });
-        $.each(v.os, (j, k) => {
-            if ($.grep(filters, (e) => { return e.os == k; }).length === 0)
-                filters.push({ "os": k, "checked": false });
+
+
+        // Add filter options
+        $.each(filters, (i, v) => {
+            if (v.tag != undefined) {
+                addOption(v.tag, 'subject');
+            }
+            else if (v.os != undefined) {
+                addOption(v.os, 'os');
+            }
         });
+
+        buildList();
     });
-
-
-    // Add filter options
-    $.each(filters, (i, v) => {
-        if (v.tag != undefined) {
-            addOption(v.tag, 'subject');
-        }
-        else if (v.os != undefined) {
-            addOption(v.os, 'os');
-        }
-    });
-
-    buildList();
 });
