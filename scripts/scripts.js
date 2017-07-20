@@ -69,7 +69,7 @@ function containsObjs(objs, type) {
 
 function createElement(course) {
     var div = $('<div class="course"></div>').html(
-        '<div class="image"><img src="//raw.githubusercontent.com/AzureWorkshops/images/master/logos/' + course.image + '" /></div>' +
+        '<div class="image"><img src="//cdn.rawgit.com/AzureWorkshops/images/master/logos/' + course.image + '" /></div>' +
         (course.url != undefined ? '<div class="cdesc"><h3><a href="' + course.url + '">' + course.title + '</a></h3>' : '<div class="cdesc"><h3>' + course.title + '</h3>') +
         course.description)
 
@@ -78,7 +78,7 @@ function createElement(course) {
         var links = '';
 
         $.each(course.links, (i, link) => {
-            links += '<a href="' + link.url + '"><img src="http://raw.githubusercontent.com/AzureWorkshops/images/master/logos/' + link.icon + '" /> ' + link.description + '</a>';
+            links += '<a href="' + link.url + '"><img src="//cdn.rawgit.com/AzureWorkshops/images/master/logos/' + link.icon + '" /> ' + link.description + '</a>';
         });
 
         links = $('<div class="links"></div>').html(links);
