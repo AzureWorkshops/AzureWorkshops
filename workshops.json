@@ -2,7 +2,7 @@
     {
         "title": "AD Connect",
         "description": "This workshop centers around helping the user better understand the basics of Azure Active Directory, including Office 365. Particiapnts with learn how to connect and synchronize an on-premises Active Directory with Azure AD.",
-        "image": "azure_active_directory.png",
+        "image": "active-directory.svg",
         "url": "https://azureworkshops.github.io/Azure-AD-Connect/",
         "tags": ["Office 365", "Active Directory"],
         "os": ["Windows Server"],
@@ -104,6 +104,7 @@
     {
         "title": "Azure Key Vault <em>(presentation only)</em>",
         "description": "Azure Key Vault helps safeguard cryptographic keys and secrets (such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords) used by cloud applications and service that are protected by hardware security modules (HSMs).",
+        "image": "key-vault.svg",
         "tags": ["DevOps", "Infrastructure"],
         "os": ["Windows Server", "CentOS", "Ubuntu"],
         "active": true,
