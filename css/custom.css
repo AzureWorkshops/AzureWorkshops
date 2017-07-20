@@ -138,6 +138,20 @@ input[type="radio"].styled:checked + label:after {
     width:80%;
 }
 
+.course .links {
+    padding-top:8px;
+}
+
+.course .links a {
+    text-decoration: none;
+}
+
+.course .links img {
+    height:20px;
+    position: relative;
+    top: -2px;
+}
+
 @media (min-width: 993px) and (max-width: 1200px) {
     .course {
         height:190px;
@@ -180,12 +194,12 @@ input[type="radio"].styled:checked + label:after {
 
 @media (max-width: 767px) {
     .course {
-        height:190px;
+        height:275px;
     }
 
     .course .image {
         width:25%;
-        height:170px;
+        height:255px;
     }
 
     .course .image img {

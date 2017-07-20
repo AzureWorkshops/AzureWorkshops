@@ -1,4 +1,4 @@
-var data = undefined;
+var data;
 
 var activeData = [];
 var filters = [];
@@ -70,8 +70,21 @@ function containsObjs(objs, type) {
 function createElement(course) {
     var div = $('<div class="course"></div>').html(
         '<div class="image"><img src="//raw.githubusercontent.com/AzureWorkshops/images/master/logos/' + course.image + '" /></div>' +
-        '<div class="cdesc"><h3><a href="' + course.url + '">' + course.title + '</a></h3>' +
-        course.description);
+        (course.url != undefined ? '<div class="cdesc"><h3><a href="' + course.url + '">' + course.title + '</a></h3>' : '<div class="cdesc"><h3>' + course.title + '</h3>') +
+        course.description)
+
+    if (course.links != undefined) {
+        console.log(course.links);
+        var links = '';
+
+        $.each(course.links, (i, link) => {
+            links += '<a href="' + link.url + '"><img src="http://raw.githubusercontent.com/AzureWorkshops/images/master/logos/' + link.icon + '" /> ' + link.description + '</a>';
+        });
+
+        links = $('<div class="links"></div>').html(links);
+        $(div).find('.cdesc').append(links);
+    }
+
     $('#courses').append(div);
 }
 
