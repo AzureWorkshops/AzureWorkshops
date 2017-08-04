@@ -2,10 +2,6 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  font-size: 100%;
-  line-height: 160%;
-  min-height: 100%;
-  height: auto!important;
 }
 
 .navbar-inverse {
@@ -29,6 +25,10 @@ body {
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
     color: #fff;
     background-color: #286090;
+}
+
+.copy {
+  font-size:14px;
 }
 
 .jumbotron .h1, .jumbotron h1, .display-3 {
