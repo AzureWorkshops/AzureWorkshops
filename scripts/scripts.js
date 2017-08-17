@@ -74,7 +74,6 @@ function createElement(course) {
         course.description)
 
     if (course.links != undefined) {
-        console.log(course.links);
         var links = '';
 
         $.each(course.links, (i, link) => {
