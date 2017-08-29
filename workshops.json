@@ -53,10 +53,12 @@
     },
     {
         "title": "Docker Automation with Dockerfiles (Windows Server)",
-        "description": "Docker Automation with Dockerfiles (Windows Server) description",
+        "description": "This workshop will show you how to automate the building and configuring of a Windows Server-based Docker image by utilizing Dockerfiles. You will construct a Dockerfile by mimicking a production environment while learning some of the options for a Dockerfile configuration.",
+        "image": "docker.png",
+        "url": "https://azureworkshops.github.io/Dockerfiles-Windows-Server/",
         "tags": ["Containers and Microservices"],
         "os": ["Windows Server"],
-        "active": false
+        "active": true
     },
     {
         "title": "Docker Compose",
