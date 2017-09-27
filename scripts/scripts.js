@@ -99,9 +99,9 @@ function addOption(item, list) {
 }
 
 $(document).ready(function () {
-    $.getJSON('//raw.githubusercontent.com/AzureWorkshops/AzureWorkshops.github.io/master/workshops.json', (resp) => {
+    $.getJSON('//raw.githubusercontent.com/AzureWorkshops/AzureWorkshops.github.io/master/workshops.json', function(resp) {
         data = resp;
-    }).then(() => {
+    }).then(function() {
         activeData = $.grep(data, function(n) { return n.active; });
 
         // Get only active tags
