@@ -76,7 +76,7 @@ function createElement(course) {
     if (course.links != undefined) {
         var links = '';
 
-        $.each(course.links, (i, link) => {
+        $.each(course.links, function(i, link) {
             links += '<a href="' + link.url + '"><img src="//cdn.rawgit.com/AzureWorkshops/images/master/logos/' + link.icon + '" /> ' + link.description + '</a>';
         });
 
