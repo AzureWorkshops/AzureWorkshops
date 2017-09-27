@@ -15,36 +15,36 @@ var filterClick = function (control, data) {
 function buildList() {
     $('#courses').empty();
 
-    var checked = $.grep(filters, (n) => { return n.checked; });
+    var checked = $.grep(filters, function(n) { return n.checked; });
     if (checked.length > 0) {
         // get checked for each filter type
-        var tags = $.grep(checked, (n) => { return n.tag != undefined; });
-        var oses = $.grep(checked, (n) => { return n.os != undefined; });
+        var tags = $.grep(checked, function(n) { return n.tag != undefined; });
+        var oses = $.grep(checked, function(n) { return n.os != undefined; });
 
         // compare both
         if (tags.length > 0 && oses.length > 0) {
-            $.each(activeData, (i, v) => {
+            $.each(activeData, function(i, v) {
                 if (containsObjs(v.tags, 'tags') && containsObjs(v.os, 'os'))
                     createElement(v);
             });
         }
         // check if just tags checked
         else if (oses.length == 0) {
-            $.each(activeData, (i, v) => {
+            $.each(activeData, function(i, v) {
                 if (containsObjs(v.tags, 'tags'))
                     createElement(v);
             });
         }
         // check if just os checked
         else if (tags.length == 0) {
-            $.each(activeData, (i, v) => {
+            $.each(activeData, function(i, v) {
                 if (containsObjs(v.os, 'os'))
                     createElement(v);
             });
         }
     }
     else {
-        $.each(activeData, (i, v) => {
+        $.each(activeData, function(i, v) {
             createElement(v);
         });
     }
@@ -53,13 +53,13 @@ function buildList() {
 function containsObjs(objs, type) {
     var checked = undefined;
     if (type == "tags")
-        checked = $.grep(filters, (n) => { return n.checked; }).map(function (f) { return f.tag; });
+        checked = $.grep(filters, function(n) { return n.checked; }).map(function (f) { return f.tag; });
     else if (type == "os")
-        checked = $.grep(filters, (n) => { return n.checked; }).map(function (f) { return f.os; });
+        checked = $.grep(filters, function(n) { return n.checked; }).map(function (f) { return f.os; });
 
     var match = false;
 
-    $.each(objs, (i, v) => {
+    $.each(objs, function(i, v) {
         if (checked.indexOf(v) != -1)
             match = true;
     })
@@ -102,23 +102,23 @@ $(document).ready(function () {
     $.getJSON('//raw.githubusercontent.com/AzureWorkshops/AzureWorkshops.github.io/master/workshops.json', (resp) => {
         data = resp;
     }).then(() => {
-        activeData = $.grep(data, (n) => { return n.active; });
+        activeData = $.grep(data, function(n) { return n.active; });
 
         // Get only active tags
-        $.each(activeData, (i, v) => {
-            $.each(v.tags, (j, k) => {
-                if ($.grep(filters, (e) => { return e.tag == k; }).length === 0)
+        $.each(activeData, function(i, v) {
+            $.each(v.tags, function(j, k) {
+                if ($.grep(filters, function(e) { return e.tag == k; }).length === 0)
                     filters.push({ "tag": k, "checked": false });
             });
             $.each(v.os, (j, k) => {
-                if ($.grep(filters, (e) => { return e.os == k; }).length === 0)
+                if ($.grep(filters, function(e) { return e.os == k; }).length === 0)
                     filters.push({ "os": k, "checked": false });
             });
         });
 
 
         // Add filter options
-        $.each(filters, (i, v) => {
+        $.each(filters, function(i, v) {
             if (v.tag != undefined) {
                 addOption(v.tag, 'subject');
             }
