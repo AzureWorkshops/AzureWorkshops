@@ -5,8 +5,8 @@ var filters = [];
 
 var filterClick = function (control, data) {
     var index = -1;
-    if ($(control).data("type") == "subject") { index = filters.findIndex(function(obj) = { return obj.tag == data; } }
-    else if ($(control).data("type") == "os") { index = filters.findIndex(function(obj) = { return obj.os == data; } }
+    if ($(control).data("type") == "subject") { index = filters.findIndex(function(obj) { return obj.tag == data; } }
+    else if ($(control).data("type") == "os") { index = filters.findIndex(function(obj) { return obj.os == data; } }
     filters[index].checked = control.checked;
 
     buildList();
