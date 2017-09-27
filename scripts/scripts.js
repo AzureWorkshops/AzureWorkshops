@@ -110,7 +110,7 @@ $(document).ready(function () {
                 if ($.grep(filters, function(e) { return e.tag == k; }).length === 0)
                     filters.push({ "tag": k, "checked": false });
             });
-            $.each(v.os, (j, k) => {
+            $.each(v.os, function(j, k) {
                 if ($.grep(filters, function(e) { return e.os == k; }).length === 0)
                     filters.push({ "os": k, "checked": false });
             });
