@@ -124,6 +124,13 @@
         "image": "power-bi.png",
         "tags": ["Azure Data Factory", "Azure HDInsight Spark", "Azure Machine Learning", "Power BI", "Advanced Analytics"],
         "os": ["Not Required"],
-        "active": true
+        "active": true,
+        "links": [
+            {
+                "icon": "powerpoint.png",
+                "url": "//github.com/AzureWorkshops/Big-Data-Visualization-New/raw/master/AZW_Big_Data_and_Visualization_Whiteboard_Design_Session.pptx",
+                "description": "PowerPoint"
+            }
+        ]
     }
 ]
