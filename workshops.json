@@ -122,6 +122,7 @@
         "title": "Big Data and Visualization",
         "description": "Analyze weather data using Azure Machine Learning, build a data pipeline using Azure Data Factory, summarize it in HDInsight Spark, and visualize it using Power BI.",
         "image": "power-bi.png",
+        "url": "https://azureworkshops.github.io/Big-Data-Visualization-New/",
         "tags": ["Azure Data Factory", "Azure HDInsight Spark", "Azure Machine Learning", "Power BI", "Advanced Analytics"],
         "os": ["Not Required"],
         "active": true,
